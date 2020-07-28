@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+	int i,j;
+	int mat[3][3];
+	printf("Input elements in the matrix: \n");
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			printf("Element- [%d][%d]: ",i+1,j+1);
+			scanf("%d",&mat[i][j]);
+		}
+	}
+	for(i=0;i<3;++i)
+	{
+		for(j=0;j<3;++j)
+		{
+			printf("%1.d\t",mat[i][j]);
+			if(j==2)
+			printf("\n");
+		}
+	}
+	return 0;
+}
